@@ -3858,21 +3858,21 @@
   //#define CUSTOM_MENU_MAIN_SCRIPT_RETURN   // Return to status screen after a script
   #define CUSTOM_MENU_MAIN_ONLY_IDLE         // Only show custom menu when the machine is idle
 
-  #define MAIN_MENU_ITEM_1_DESC "Restart mainboard"
-  #define MAIN_MENU_ITEM_1_GCODE "M997"
-  #define MAIN_MENU_ITEM_1_CONFIRM          // Show a confirmation dialog before this action
+  #define MAIN_MENU_ITEM_1_DESC "Light on"
+  #define MAIN_MENU_ITEM_1_GCODE "M118 A1 action:light_on"
+  //#define MAIN_MENU_ITEM_1_CONFIRM
 
-  #define MAIN_MENU_ITEM_2_DESC "Shut down PI"
-  #define MAIN_MENU_ITEM_2_GCODE "M118 A1 action:poweroff"
-  #define MAIN_MENU_ITEM_2_CONFIRM
+  #define MAIN_MENU_ITEM_2_DESC "Light off"
+  #define MAIN_MENU_ITEM_2_GCODE "M118 A1 action:light_off"
+  //#define MAIN_MENU_ITEM_2_CONFIRM
 
-  //#define MAIN_MENU_ITEM_3_DESC "Preheat for " PREHEAT_2_LABEL
-  //#define MAIN_MENU_ITEM_3_GCODE "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nM104 S" STRINGIFY(PREHEAT_2_TEMP_HOTEND)
-  //#define MAIN_MENU_ITEM_3_CONFIRM
+  #define MAIN_MENU_ITEM_3_DESC "Restart mainboard"
+  #define MAIN_MENU_ITEM_3_GCODE "M997"
+  #define MAIN_MENU_ITEM_3_CONFIRM          // Show a confirmation dialog before this action
 
-  //#define MAIN_MENU_ITEM_4_DESC "Heat Bed/Home/Level"
-  //#define MAIN_MENU_ITEM_4_GCODE "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nG28\nG29"
-  //#define MAIN_MENU_ITEM_4_CONFIRM
+  #define MAIN_MENU_ITEM_4_DESC "Shut down PI"
+  #define MAIN_MENU_ITEM_4_GCODE "M118 A1 action:shutdown"
+  #define MAIN_MENU_ITEM_4_CONFIRM
 
   //#define MAIN_MENU_ITEM_5_DESC "Home & Info"
   //#define MAIN_MENU_ITEM_5_GCODE "G28\nM503"
